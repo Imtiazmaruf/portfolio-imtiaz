@@ -1,0 +1,1 @@
+ /Users/betopiagroup/portfolio/.dart_tool/flutter_build/01dbfc76c7ea801f9a91d879dc2d757e/dart_build_result.json:  /Users/betopiagroup/portfolio/.dart_tool/package_config.json /Users/betopiagroup/portfolio/pubspec.yaml /opt/homebrew/share/flutter/bin/cache/dart-sdk/version

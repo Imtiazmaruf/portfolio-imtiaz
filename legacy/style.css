@@ -47,7 +47,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--text-primary);
     font-weight: 600;
 }
@@ -176,10 +181,9 @@ nav.scrolled {
 
 /* Sections General */
 section {
-    padding: 100px 2rem;
+    padding: 20px 2rem;
     max-width: 1000px;
     margin: 0 auto;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,6 +191,7 @@ section {
 
 /* Hero Section */
 .hero {
+    min-height: 100vh;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -589,14 +594,14 @@ footer {
     .nav-links.active {
         display: flex;
     }
-    
+
     .footer-socials {
         display: flex;
         justify-content: center;
         gap: 1.5rem;
         margin-bottom: 1rem;
     }
-    
+
     .footer-socials a {
         color: var(--text-secondary);
         font-size: 1.2rem;

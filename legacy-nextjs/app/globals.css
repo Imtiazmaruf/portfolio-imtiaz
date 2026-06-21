@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg-color: #0a192f;
+  --color-text-primary: #ccd6f6;
+  --color-text-secondary: #8892b0;
+  --color-accent: #64ffda;
+  --font-sans: var(--font-outfit), sans-serif;
+  --font-mono: monospace;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold text-text-primary;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  @apply bg-[#020c1b]/70 backdrop-blur-md border border-[#64ffda]/10 rounded-xl p-8 transition-all duration-300;
+}
+
+.glass-panel:hover {
+  @apply -translate-y-[5px] border-[#64ffda]/30 shadow-[0_10px_30px_-15px_rgba(2,12,27,0.7)];
+}
+
+/* Buttons */
+.btn {
+  @apply inline-block px-6 py-3 rounded text-[0.9rem] transition-all duration-300 cursor-pointer font-mono decoration-transparent;
+}
+
+.btn-primary {
+  @apply text-accent bg-transparent border border-accent;
+}
+
+.btn-primary:hover {
+  @apply bg-[#64ffda]/10;
+}
+
+.btn-secondary {
+  @apply text-text-primary bg-white/5 border border-white/10;
+}
+
+.btn-secondary:hover {
+  @apply bg-white/10;
+}
+
+/* Animations */
+.section-hidden {
+  @apply opacity-0 translate-y-[30px] transition-all duration-[800ms] ease-out;
+}
+
+.section-visible {
+  @apply opacity-100 translate-y-0;
+}
