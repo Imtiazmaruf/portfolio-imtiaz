@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Imtiaz Rahman - Flutter Developer</title>
+    <meta name="description" content="Portfolio of MD Imtiaz Rahman, a Flutter Developer with 2+ years of experience building scalable, high-performance Android and iOS applications.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">IR.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-hidden">
+        <div class="hero-content">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="hero-title">MD Imtiaz Rahman.</h1>
+            <h2 class="subtitle">I build things for mobile.</h2>
+            <p class="hero-desc">I'm a Flutter Developer specializing in building scalable, high-performance Android and iOS applications using Clean Architecture and modern state management.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="#projects" class="btn btn-secondary">View Work</a>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:imtiazmaruf016@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="blob-wrapper">
+                <img src="profile.jpg" alt="MD Imtiaz Rahman" onerror="this.src='https://ui-avatars.com/api/?name=MD+Imtiaz+Rahman&background=1e1e24&color=64ffda&size=512&rounded=true';">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-hidden">
+        <h2 class="section-title"><span class="title-number">01.</span> About Me</h2>
+        <div class="about-grid">
+            <div class="about-content glass-panel">
+                <p>Flutter Developer with 2+ years of experience building scalable, high-performance Android and iOS applications using Flutter and Dart. Specialized in Clean Architecture, Riverpod, BLoC, REST API integration, Firebase services, and offline-first development using Hive and SQLite.</p>
+                <p>Experienced in delivering production-ready mobile applications with optimized performance, maintainable codebases, and responsive user interfaces. Recently started learning Django to expand backend development skills and build full-stack solutions.</p>
+            </div>
+            <div class="education glass-panel">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="edu-item">
+                    <h4>Ahsanullah Institute of Information & Communication Technology</h4>
+                    <p>Bachelor of Science in Computer Science (2019 – 2023)</p>
+                    <p class="location">Dhaka, Bangladesh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-hidden">
+        <h2 class="section-title"><span class="title-number">02.</span> Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item glass-panel">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Aug 2025 – Present</div>
+                <h3>SM Technology</h3>
+                <h4>Flutter Developer</h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+                <ul>
+                    <li>Developing scalable Flutter applications using Clean Architecture and SOLID principles.</li>
+                    <li>Implementing Riverpod and BLoC for complex state management workflows.</li>
+                    <li>Working with REST APIs, authentication, pagination, and offline storage (Hive, SQLite).</li>
+                </ul>
+            </div>
+            <div class="timeline-item glass-panel">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jun 2024 – Jul 2025</div>
+                <h3>Igen Solutions Limited</h3>
+                <h4>Flutter Developer</h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+                <ul>
+                    <li>Built and maintained cross-platform mobile applications using Flutter and Dart.</li>
+                    <li>Integrated Firebase services, REST APIs, and responsive UI components.</li>
+                    <li>Improved performance and implemented scalable state management.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-hidden">
+        <h2 class="section-title"><span class="title-number">03.</span> Some Things I've Built</h2>
+        <div class="project-grid">
+            <div class="project-card glass-panel">
+                <div class="project-header">
+                    <div class="folder-icon"><i class="far fa-folder"></i></div>
+                    <div class="project-links">
+                        <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">MyCVConnect <span class="project-year">(2025)</span></h3>
+                <div class="project-description">
+                    <p>A cross-platform career networking and job recruitment platform for Android and iOS users. Developed professional profile creation, CV management, job searching, real-time messaging, interview scheduling, and intelligent job matching systems.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">REST API</span>
+                </div>
+            </div>
+            
+            <div class="project-card glass-panel">
+                <div class="project-header">
+                    <div class="folder-icon"><i class="far fa-folder"></i></div>
+                    <div class="project-links">
+                        <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">Paymaster BD <span class="project-year">(2025)</span></h3>
+                <div class="project-description">
+                    <p>A mobile financial service application for digital payments and utility management. Implemented mobile recharge system supporting multiple telecom operators with instant top-up functionality and integrated utility bill payment systems.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">REST API</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-hidden">
+        <h2 class="section-title"><span class="title-number">04.</span> Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category glass-panel">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-tags">
+                    <span class="tag">Dart</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Bengali (Native)</span>
+                    <span class="tag">English (Professional)</span>
+                </div>
+            </div>
+            <div class="skill-category glass-panel">
+                <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Django (Learning)</span>
+                </div>
+            </div>
+            <div class="skill-category glass-panel">
+                <h3><i class="fas fa-project-diagram"></i> State Management</h3>
+                <div class="skill-tags">
+                    <span class="tag">Riverpod</span>
+                    <span class="tag">BLoC</span>
+                    <span class="tag">GetX</span>
+                </div>
+            </div>
+            <div class="skill-category glass-panel">
+                <h3><i class="fas fa-database"></i> Storage & Backend</h3>
+                <div class="skill-tags">
+                    <span class="tag">Hive</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">SharedPreferences</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">JSON Parsing</span>
+                </div>
+            </div>
+            <div class="skill-category glass-panel">
+                <h3><i class="fas fa-tools"></i> Other Skills</h3>
+                <div class="skill-tags">
+                    <span class="tag">Authentication</span>
+                    <span class="tag">Payment Systems</span>
+                    <span class="tag">Pagination</span>
+                    <span class="tag">Push Notifications</span>
+                    <span class="tag">App Optimization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-hidden">
+        <h2 class="section-title"><span class="title-number">05.</span> What's Next?</h2>
+        <div class="contact-card glass-panel">
+            <h3 class="contact-heading">Get In Touch</h3>
+            <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+            <div class="contact-info">
+                <a href="mailto:imtiazmaruf016@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> imtiazmaruf016@gmail.com</a>
+                <a href="tel:+8801689907354" class="contact-link"><i class="fas fa-phone"></i> +8801689907354</a>
+                <p class="contact-link"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+            </div>
+            <a href="mailto:imtiazmaruf016@gmail.com" class="btn btn-primary mt-4">Say Hello</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>Designed & Built by MD Imtiaz Rahman &copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
