@@ -22,7 +22,7 @@ class Footer extends StatelessWidget {
                   icon: const FaIcon(FontAwesomeIcons.github),
                   color: AppTheme.textSecondary,
                   hoverColor: AppTheme.accentColor,
-                  onPressed: () => launchUrl(Uri.parse('https://github.com')),
+                  onPressed: () => launchUrl(Uri.parse('https://github.com/Imtiazmaruf')),
                 ),
                 const SizedBox(width: 16),
                 IconButton(

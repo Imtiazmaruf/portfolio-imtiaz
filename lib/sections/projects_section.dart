@@ -23,18 +23,37 @@ class ProjectsSection extends StatelessWidget {
                   children: [
                     _buildProjectCard(
                       title: 'MyCVConnect',
-                      year: '2025',
+                      year: '2026',
                       desc:
                           'A cross-platform career networking and job recruitment platform for Android and iOS users. Developed professional profile creation, CV management, job searching, real-time messaging, interview scheduling, and intelligent job matching systems.',
                       tags: ['Flutter', 'Firebase', 'REST API'],
+                      playStoreUrl:
+                          'https://play.google.com/store/apps/details?id=com.carlovan.cvconnectai',
+                      appStoreUrl:
+                          'https://apps.apple.com/us/iphone/search?term=Mycvconnect',
+                    ),
+                    const SizedBox(height: 24),
+
+                    _buildProjectCard(
+                      title: 'QHub 360',
+                      year: '2025',
+                      desc:
+                          'An AI-powered workforce management platform that streamlines HR and operational tasks. Features include automated employee scheduling, real-time time tracking, payroll processing, and integrated team communication.',
+                      tags: ['Flutter', 'AI', 'Workforce'],
+                      playStoreUrl:
+                          'https://play.google.com/store/apps/details?id=com.qtech.qhub360',
+                      appStoreUrl:
+                          'https://apps.apple.com/us/app/qhub360-ai-workforce-manager/id6740763819',
                     ),
                     const SizedBox(height: 24),
                     _buildProjectCard(
                       title: 'Paymaster BD',
-                      year: '2025',
+                      year: '2024',
                       desc:
                           'A mobile financial service application for digital payments and utility management. Implemented mobile recharge system supporting multiple telecom operators with instant top-up functionality and integrated utility bill payment systems.',
                       tags: ['Flutter', 'Firebase', 'REST API'],
+                      playStoreUrl:
+                          'https://play.google.com/store/apps/details?id=com.paymasterbd.apps',
                     ),
                   ],
                 )
@@ -59,6 +78,20 @@ class ProjectsSection extends StatelessWidget {
                           desc:
                               'A mobile financial service application for digital payments and utility management. Implemented mobile recharge system supporting multiple telecom operators with instant top-up functionality and integrated utility bill payment systems.',
                           tags: ['Flutter', 'Firebase', 'REST API'],
+                        ),
+                      ),
+                      const SizedBox(width: 24),
+                      Expanded(
+                        child: _buildProjectCard(
+                          title: 'QHub 360',
+                          year: '2025',
+                          desc:
+                              'An AI-powered workforce management platform that streamlines HR and operational tasks. Features include automated employee scheduling, real-time time tracking, payroll processing, and integrated team communication.',
+                          tags: ['Flutter', 'AI', 'Workforce'],
+                          playStoreUrl:
+                              'https://play.google.com/store/apps/details?id=com.qtech.qhub360',
+                          appStoreUrl:
+                              'https://apps.apple.com/us/app/qhub360-ai-workforce-manager/id6740763819',
                         ),
                       ),
                     ],
@@ -105,6 +138,10 @@ class ProjectsSection extends StatelessWidget {
     required String year,
     required String desc,
     required List<String> tags,
+    String? githubUrl,
+    String? playStoreUrl,
+    String? appStoreUrl,
+    String? externalUrl,
   }) {
     return GlassPanel(
       child: Column(
@@ -113,21 +150,43 @@ class ProjectsSection extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const FaIcon(FontAwesomeIcons.folder, color: AppTheme.accentColor, size: 40),
+              const FaIcon(
+                FontAwesomeIcons.folder,
+                color: AppTheme.accentColor,
+                size: 40,
+              ),
               Row(
                 children: [
-                  IconButton(
-                    icon: const FaIcon(FontAwesomeIcons.github),
-                    color: AppTheme.textSecondary,
-                    hoverColor: AppTheme.accentColor,
-                    onPressed: () => launchUrl(Uri.parse('https://github.com')),
-                  ),
-                  IconButton(
-                    icon: const FaIcon(FontAwesomeIcons.arrowUpRightFromSquare),
-                    color: AppTheme.textSecondary,
-                    hoverColor: AppTheme.accentColor,
-                    onPressed: () {},
-                  ),
+                  if (githubUrl != null)
+                    IconButton(
+                      icon: const FaIcon(FontAwesomeIcons.github),
+                      color: AppTheme.textSecondary,
+                      hoverColor: AppTheme.accentColor,
+                      onPressed: () => launchUrl(Uri.parse(githubUrl)),
+                    ),
+                  if (playStoreUrl != null)
+                    IconButton(
+                      icon: const FaIcon(FontAwesomeIcons.googlePlay),
+                      color: AppTheme.textSecondary,
+                      hoverColor: AppTheme.accentColor,
+                      onPressed: () => launchUrl(Uri.parse(playStoreUrl)),
+                    ),
+                  if (appStoreUrl != null)
+                    IconButton(
+                      icon: const FaIcon(FontAwesomeIcons.appStoreIos),
+                      color: AppTheme.textSecondary,
+                      hoverColor: AppTheme.accentColor,
+                      onPressed: () => launchUrl(Uri.parse(appStoreUrl)),
+                    ),
+                  if (externalUrl != null)
+                    IconButton(
+                      icon: const FaIcon(
+                        FontAwesomeIcons.arrowUpRightFromSquare,
+                      ),
+                      color: AppTheme.textSecondary,
+                      hoverColor: AppTheme.accentColor,
+                      onPressed: () => launchUrl(Uri.parse(externalUrl)),
+                    ),
                 ],
               ),
             ],
@@ -164,17 +223,26 @@ class ProjectsSection extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: tags
-                .map((t) => Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                      decoration: BoxDecoration(
-                        color: AppTheme.accentColor.withAlpha(26),
-                        borderRadius: BorderRadius.circular(12),
+                .map(
+                  (t) => Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 4,
+                    ),
+                    decoration: BoxDecoration(
+                      color: AppTheme.accentColor.withAlpha(26),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Text(
+                      t,
+                      style: const TextStyle(
+                        color: AppTheme.accentColor,
+                        fontFamily: 'monospace',
+                        fontSize: 12,
                       ),
-                      child: Text(
-                        t,
-                        style: const TextStyle(color: AppTheme.accentColor, fontFamily: 'monospace', fontSize: 12),
-                      ),
-                    ))
+                    ),
+                  ),
+                )
                 .toList(),
           ),
         ],

@@ -68,22 +68,22 @@ class _HomePageState extends State<HomePage> {
                 Navigator.pop(context);
                 _scrollTo(_aboutKey);
               }),
-              const SizedBox(height: 24),
+              const SizedBox(height: 8),
               _buildDrawerLink('Experience', () {
                 Navigator.pop(context);
                 _scrollTo(_experienceKey);
               }),
-              const SizedBox(height: 24),
+              const SizedBox(height: 8),
               _buildDrawerLink('Projects', () {
                 Navigator.pop(context);
                 _scrollTo(_projectsKey);
               }),
-              const SizedBox(height: 24),
+              const SizedBox(height: 8),
               _buildDrawerLink('Skills', () {
                 Navigator.pop(context);
                 _scrollTo(_skillsKey);
               }),
-              const SizedBox(height: 24),
+              const SizedBox(height: 8),
               _buildDrawerLink('Contact', () {
                 Navigator.pop(context);
                 _scrollTo(_contactKey);

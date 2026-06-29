@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../theme.dart';
 import '../widgets/glass_panel.dart';
 
@@ -69,6 +70,7 @@ class ExperienceSection extends StatelessWidget {
               _buildExperienceItem(
                 date: 'Aug 2025 – Present',
                 company: 'SM Technology',
+                companyUrl: 'https://smtech24.com/',
                 role: 'Flutter Developer',
                 location: 'Dhaka, Bangladesh',
                 bullets: [
@@ -81,6 +83,7 @@ class ExperienceSection extends StatelessWidget {
               _buildExperienceItem(
                 date: 'Jun 2024 – Jul 2025',
                 company: 'Igen Solutions Limited',
+                companyUrl: 'https://igensolutionsltd.com/',
                 role: 'Flutter Developer',
                 location: 'Dhaka, Bangladesh',
                 bullets: [
@@ -99,6 +102,7 @@ class ExperienceSection extends StatelessWidget {
   Widget _buildExperienceItem({
     required String date,
     required String company,
+    String? companyUrl,
     required String role,
     required String location,
     required List<String> bullets,
@@ -132,12 +136,27 @@ class ExperienceSection extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 8),
-              Text(
-                company,
-                style: const TextStyle(
-                  color: AppTheme.textPrimary,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w600,
+              MouseRegion(
+                cursor: companyUrl != null ? SystemMouseCursors.click : SystemMouseCursors.basic,
+                child: GestureDetector(
+                  onTap: () async {
+                    if (companyUrl != null) {
+                      final url = Uri.parse(companyUrl);
+                      if (await canLaunchUrl(url)) {
+                        await launchUrl(url);
+                      }
+                    }
+                  },
+                  child: Text(
+                    company,
+                    style: TextStyle(
+                      color: companyUrl != null ? AppTheme.accentColor : AppTheme.textPrimary,
+                      fontSize: 22,
+                      fontWeight: FontWeight.w600,
+                      decoration: companyUrl != null ? TextDecoration.underline : TextDecoration.none,
+                      decorationColor: AppTheme.accentColor,
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(height: 4),
