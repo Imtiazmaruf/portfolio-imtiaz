@@ -1,5 +1,5 @@
 {
-  "buildCommand": "bash build.sh",
+  "buildCommand": "echo 'No build required'",
   "outputDirectory": "build/web",
   "installCommand": "echo 'Skipping install'"
 }
