@@ -26,11 +26,11 @@ class ProjectsSection extends StatelessWidget {
                       year: '2026',
                       desc:
                           'A cross-platform career networking and job recruitment platform for Android and iOS users. Developed professional profile creation, CV management, job searching, real-time messaging, interview scheduling, and intelligent job matching systems.',
-                      tags: ['Flutter', 'Firebase', 'REST API'],
+                      tags: ['Flutter', 'GetX', 'AI', 'Firebase', 'REST API'],
                       playStoreUrl:
                           'https://play.google.com/store/apps/details?id=com.carlovan.cvconnectai',
                       appStoreUrl:
-                          'https://apps.apple.com/us/iphone/search?term=Mycvconnect',
+                          'https://apps.apple.com/us/app/mycvconnect/id6757781151',
                     ),
                     const SizedBox(height: 24),
 
@@ -39,7 +39,13 @@ class ProjectsSection extends StatelessWidget {
                       year: '2025',
                       desc:
                           'An AI-powered workforce management platform that streamlines HR and operational tasks. Features include automated employee scheduling, real-time time tracking, payroll processing, and integrated team communication.',
-                      tags: ['Flutter', 'AI', 'Workforce'],
+                      tags: [
+                        'Flutter',
+                        'Riverpod',
+                        'AI',
+                        'Workforce',
+                        'Rest API',
+                      ],
                       playStoreUrl:
                           'https://play.google.com/store/apps/details?id=com.qtech.qhub360',
                       appStoreUrl:
@@ -51,7 +57,7 @@ class ProjectsSection extends StatelessWidget {
                       year: '2024',
                       desc:
                           'A mobile financial service application for digital payments and utility management. Implemented mobile recharge system supporting multiple telecom operators with instant top-up functionality and integrated utility bill payment systems.',
-                      tags: ['Flutter', 'Firebase', 'REST API'],
+                      tags: ['Flutter', 'Riverpod', 'Firebase', 'REST API'],
                       playStoreUrl:
                           'https://play.google.com/store/apps/details?id=com.paymasterbd.apps',
                     ),
@@ -67,7 +73,17 @@ class ProjectsSection extends StatelessWidget {
                           year: '2026',
                           desc:
                               'A cross-platform career networking and job recruitment platform for Android and iOS users. Developed professional profile creation, CV management, job searching, real-time messaging, interview scheduling, and intelligent job matching systems.',
-                          tags: ['Flutter', 'Firebase', 'REST API'],
+                          tags: [
+                            'Flutter',
+                            'GetX',
+                            'AI',
+                            'Firebase',
+                            'REST API',
+                          ],
+                          playStoreUrl:
+                              'https://play.google.com/store/apps/details?id=com.carlovan.cvconnectai',
+                          appStoreUrl:
+                              'https://apps.apple.com/us/app/mycvconnect/id6757781151',
                         ),
                       ),
                       const SizedBox(width: 24),
@@ -77,7 +93,13 @@ class ProjectsSection extends StatelessWidget {
                           year: '2025',
                           desc:
                               'An AI-powered workforce management platform that streamlines HR and operational tasks. Features include automated employee scheduling, real-time time tracking, payroll processing, and integrated team communication.',
-                          tags: ['Flutter', 'AI', 'Workforce'],
+                          tags: [
+                            'Flutter',
+                            'Riverpod',
+                            'AI',
+                            'Workforce',
+                            'Rest API',
+                          ],
                           playStoreUrl:
                               'https://play.google.com/store/apps/details?id=com.qtech.qhub360',
                           appStoreUrl:
@@ -91,7 +113,9 @@ class ProjectsSection extends StatelessWidget {
                           year: '2024',
                           desc:
                               'A mobile financial service application for digital payments and utility management. Implemented mobile recharge system supporting multiple telecom operators with instant top-up functionality and integrated utility bill payment systems.',
-                          tags: ['Flutter', 'Firebase', 'REST API'],
+                          tags: ['Flutter', 'Riverpod', 'Firebase', 'REST API'],
+                          playStoreUrl:
+                              'https://play.google.com/store/apps/details?id=com.paymasterbd.apps',
                         ),
                       ),
                     ],
