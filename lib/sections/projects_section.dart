@@ -64,19 +64,9 @@ class ProjectsSection extends StatelessWidget {
                       Expanded(
                         child: _buildProjectCard(
                           title: 'MyCVConnect',
-                          year: '2025',
+                          year: '2026',
                           desc:
                               'A cross-platform career networking and job recruitment platform for Android and iOS users. Developed professional profile creation, CV management, job searching, real-time messaging, interview scheduling, and intelligent job matching systems.',
-                          tags: ['Flutter', 'Firebase', 'REST API'],
-                        ),
-                      ),
-                      const SizedBox(width: 24),
-                      Expanded(
-                        child: _buildProjectCard(
-                          title: 'Paymaster BD',
-                          year: '2025',
-                          desc:
-                              'A mobile financial service application for digital payments and utility management. Implemented mobile recharge system supporting multiple telecom operators with instant top-up functionality and integrated utility bill payment systems.',
                           tags: ['Flutter', 'Firebase', 'REST API'],
                         ),
                       ),
@@ -92,6 +82,16 @@ class ProjectsSection extends StatelessWidget {
                               'https://play.google.com/store/apps/details?id=com.qtech.qhub360',
                           appStoreUrl:
                               'https://apps.apple.com/us/app/qhub360-ai-workforce-manager/id6740763819',
+                        ),
+                      ),
+                      const SizedBox(width: 24),
+                      Expanded(
+                        child: _buildProjectCard(
+                          title: 'Paymaster BD',
+                          year: '2024',
+                          desc:
+                              'A mobile financial service application for digital payments and utility management. Implemented mobile recharge system supporting multiple telecom operators with instant top-up functionality and integrated utility bill payment systems.',
+                          tags: ['Flutter', 'Firebase', 'REST API'],
                         ),
                       ),
                     ],
